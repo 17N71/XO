@@ -1,0 +1,43 @@
+body {
+	background-color: #171819;
+	color: white;
+	overflow: hidden;
+}
+.table {
+	min-width: 350px;
+	max-width: 350px;
+	min-height: 350px;
+	max-height: 350px;
+	border: 2px solid;
+	margin: 50vh auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.cell {
+	border: 2px solid;
+	flex: 0 0 calc(350px / 3 - 4px);
+	width: calc(350px / 3 - 4px);
+	min-width: calc(350px / 3 - 4px);
+	height: calc(350px / 3 - 4px);
+	min-height: calc(350px / 3 - 4px);
+	min-height: calc(350px / 3 - 4px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.7rem;
+}
+.winner {
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 4.2rem;
+}
+@media screen and (max-width: 670px) {
+	.winner {
+		font-size: 3.6rem;
+	}
+}
