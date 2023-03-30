@@ -1,6 +1,6 @@
 const table = document.querySelector('.table');
 const cells = document.querySelectorAll('.cell');
-const winner = document.querySelector('h1.winner');
+const winner = document.querySelector('.winner');
 let gameState = 0;
 cells.forEach((c, i) => c.addEventListener('click', () => toggleCell(c)));
 function toggleCell(c) {
