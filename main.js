@@ -28,9 +28,7 @@ function checkGame() {
 		[2, 4, 6],
 	];
 	for (let i = 0; i < winSteps.length; i++) {
-		const checkFirst = winSteps[i][0];
-		const checkSecond = winSteps[i][1];
-		const checkThird = winSteps[i][2];
+		const [checkFirst,checkSecond,checkThird] = winSteps[i];
 		if (
 			cells[checkFirst].classList.contains('x') &&
 			cells[checkSecond].classList.contains('x') &&
